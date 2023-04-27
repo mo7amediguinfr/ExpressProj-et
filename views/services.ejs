@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(154,122,122);
+        }
+        .ourServices{
+            width: 50%;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .onlineServices{
+            text-align: center;
+        }
+        .contactus{
+            text-align: center;
+            /* width: 50%; */
+            /* margin: auto; */
+            margin-left: 600px;
+            border: 4px solid green;
+            border-radius: 7px;
+            background-color: rgb(154,122,122);
+        }
+        .contactus:hover{
+          cursor: pointer;
+          background-color: green;
+        }
+        .cards{
+            display: flex;
+            margin-top: 30px;
+            gap: 2px 8px ;
+        }
+        .digitalServices{
+            width: 50%;
+            text-align: center;
+        }
+        .OnlineServices{
+            text-align: center;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <%- include('navbar') %>
+    <h1 class="ourServices">Our Services</h1>
+    <h3 class="onlineServices">We are an online Website fot IT Services </h3>
+    <button class="contactus">Contact Us</button>
+    <div class="cards">
+        <div class="digitalServices">
+            <h3>Digital Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique obcaecati provident aut omnis placeat quae beatae a reprehenderit laudantium.</p>
+        </div><div class="OnlineServices">
+            <h3>Online Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique obcaecati provident aut omnis placeat quae beatae a reprehenderit laudantium.</p>
+        </div><div class="digitalServices">
+            <h3>Digital Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique obcaecati provident aut omnis placeat quae beatae a reprehenderit laudantium.</p>
+        </div>
+    </div>
+    <!-- <div class="services-container">
+        <div class="service">
+            <div class="service-content">
+                <h3>Custom Website Application Development</h3>
+                <p>From creating simple web pages to complex solutions, our team has experience developing the best solutions. We use the latest tools and technologies to ensure industry-leading custom website application development services. Be the next market leader and let your business website or application grab the users' attention at a glance.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-content">
+                <h3>Custom Web Development Consulting</h3>
+                <p>If you have an idea to develop a custom website and need professional assistance to execute it, we can help. Our team will help you evaluate your business goals and requirements while ensuring project feasibility and success. Seek our web development consulting services and turn your small business idea into a successful opportunity.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-content">
+                <h3>Custom Frontend Development</h3>
+                <p>Our customized frontend web development solutions are tailor-made and are exceptionally easy to maintain. Dev Technosys has a team of dedicated frontend developers who create outstanding custom web development solutions. Begin your online journey with the assistance of one of the top custom web development companies in USA.</p>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>

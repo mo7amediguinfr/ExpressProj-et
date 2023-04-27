@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-color:rgb(154,122,122);
+}
+
+
+.form{
+margin-top: 60px;
+width: 50%;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+gap: 2px 8px ;
+
+}
+.frname{
+  height: 45px;
+  text-align: center;
+  margin-top: 40px;
+}
+.lastname{
+  height: 45px;
+  text-align: center;
+  margin-top: 40px;
+
+
+}
+.email{
+  height: 45px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.phone{
+  height: 45px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.adress{
+  height: 45px;
+text-align: center;
+margin-top: 40px;
+
+}
+.submitbtn{
+margin-top: 190px;
+}
+.submitbtn:hover{
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <%- include('navbar') %>
+    <h1>Contact Us</h1>
+    <div class="container">
+        <form action="/action_page.php" class="form">
+          <input type="text" id="fname" class="frname" name="firstname" placeholder="Your name..">
+          <input type="text" id="lname" name="lastname" class="lastname" placeholder="Your last name..">
+        <input type="text" class="email" placeholder="Email">
+        <input type="number" class="phone" placeholder="Phone">
+        <input type="text" class="adress" placeholder="Your Adress"><br/>
+          <button class="submitbtn">Submit</button>
+      
+        </form>
+      </div>
+      
+</body>
+</html>
